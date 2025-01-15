@@ -1,0 +1,6 @@
+## Arquivo .dicasextras
+Este arquivo contém dicas adicionais sobre o estudo deste repositório. Inclui comandos úteis e anotações específicas.
+
+
+## Comandos git
+- [ ] git commit -m 'adiciona arquivo `.editorconfig`' -> adiciona estilização ao commit
