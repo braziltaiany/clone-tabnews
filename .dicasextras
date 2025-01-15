@@ -1,6 +1,21 @@
 ## Arquivo .dicasextras
+
 Este arquivo contém dicas adicionais sobre o estudo deste repositório. Inclui comandos úteis e anotações específicas.
 
-
 ## Comandos git
-- [ ] git commit -m 'adiciona arquivo `.editorconfig`' -> adiciona estilização ao commit
+
+- git commit -m 'adiciona arquivo `.editorconfig`' -> adiciona estilização ao commit
+
+## Package - Manifesto
+
+### prettier
+
+- Instalar > adicionar extenção para analises futuras automaticas > configurar no vs code
+  -- Configuração vs code
+  Default Formatter > prettier
+  Files: Auto Save > off
+  Editor: Format On Save > checked
+
+-- "lint:check": "prettier --check ." -> -- roda o comando posterior e o "." se refere a todos os arquivos existentes, portante ele irá checar se todos os arquivos estão com a formatação correta.
+--> npm run lint:check = analisa
+--> npm run lint:fix = corrige
