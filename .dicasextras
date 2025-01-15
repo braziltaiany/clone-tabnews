@@ -1,17 +1,17 @@
-## Arquivo `.dicasextras`
+# Arquivo `.dicasextras`
 
 Este arquivo contém dicas adicionais sobre o estudo deste repositório, incluindo comandos úteis e anotações específicas.
 
 ---
 
-## Comandos Git
+# Comandos Git
 
 - **`git commit -m 'adiciona arquivo .editorconfig'`**  
   Adiciona uma descrição ao commit especificando a inclusão do arquivo `.editorconfig`.
 
 ---
 
-## Package - Manifesto
+# Package - Manifesto
 
 ### Prettier
 
@@ -51,4 +51,70 @@ Ajuste as configurações do editor para utilizar o Prettier automaticamente:
     Default Formatter: Selecione Prettier como o formatador padrão.
     Files: Auto Save: Desative a opção de salvamento automático (off).
     Editor: Format On Save: Ative a opção para formatar automaticamente ao salvar (checked).
+```
+
+# Arquivos de configuração
+
+### Arquivo .editorconfig
+
+O arquivo .editorconfig define padrões de formatação compartilhados entre diferentes editores de texto e IDEs. Para configurá-lo:
+
+1. **Criar o arquivo .editorconfig**
+   Adicione o seguinte conteúdo ao arquivo para padronizar espaços, recuos e outros estilos:
+
+```
+        root = true
+
+        [*]
+        charset = utf-8
+        indent_style = space
+        indent_size = 2
+        end_of_line = lf
+        insert_final_newline = true
+        trim_trailing_whitespace = true
+```
+
+2. **Instalar a extensão EditorConfig no VS Code**
+
+- Acesse o marketplace do VS Code e procure por "EditorConfig for VS Code".
+- Instale a extensão.
+
+3. **Configuração no VS Code**
+   Após instalar a extensão, o VS Code reconhecerá automaticamente o arquivo .editorconfig e aplicará as configurações ao salvar.
+
+---
+
+### Arquivo .nvm
+
+O arquivo .nvmrc define a versão do Node.js usada no projeto, garantindo consistência entre diferentes desenvolvedores. Para configurá-lo:
+
+1. **Criar o arquivo .nvmrc**
+   Adicione a versão desejada do Node.js no arquivo. Por exemplo:
+
+```
+    18.16.0
+```
+
+2. **Instalar e usar a versão especificada**
+   No terminal, use os seguintes comandos:
+
+```
+    nvm install
+    nvm use
+```
+
+3. **Configuração no VS Code**
+   Certifique-se de que o terminal integrado do VS Code esteja usando a versão do Node.js definida no .nvmrc:
+
+Abra o terminal no VS Code e execute:
+
+```
+        nvm use
+```
+
+4. **Validação da versão do Node.js**
+   Verifique se a versão correta está sendo utilizada:
+
+```
+        node -v
 ```
