@@ -1,6 +1,6 @@
 # Arquivo `.dicasextras`
 
-Este arquivo contém dicas adicionais sobre o estudo deste repositório, incluindo comandos úteis e anotações específicas.
+**Este arquivo contém dicas adicionais sobre o estudo deste repositório, incluindo comandos úteis e anotações específicas.**
 
 ---
 
@@ -35,6 +35,7 @@ O Prettier é uma ferramenta para formatação de código, que garante consistê
     --write .: Corrige automaticamente a formatação dos arquivos.
 
     Para executar:
+    `bash
         npm run lint:check: Analisa os arquivos para verificar inconsistências.
         npm run lint:fix: Corrige a formatação dos arquivos.
 
@@ -54,6 +55,8 @@ Ajuste as configurações do editor para utilizar o Prettier automaticamente:
 ```
 
 # Arquivos de configuração
+
+Seguindo essas etapas, dos arquivos .editorconfig, .nvmrc e o Prettier por exemplos, que estão configurados para garantir consistência e padronização no projeto.
 
 ### Arquivo .editorconfig
 
@@ -91,14 +94,14 @@ O arquivo .nvmrc define a versão do Node.js usada no projeto, garantindo consis
 1. **Criar o arquivo .nvmrc**
    Adicione a versão desejada do Node.js no arquivo. Por exemplo:
 
-```
+```bash
     18.16.0
 ```
 
 2. **Instalar e usar a versão especificada**
    No terminal, use os seguintes comandos:
 
-```
+```bash
     nvm install
     nvm use
 ```
@@ -108,13 +111,13 @@ O arquivo .nvmrc define a versão do Node.js usada no projeto, garantindo consis
 
 Abra o terminal no VS Code e execute:
 
-```
+```bash
         nvm use
 ```
 
 4. **Validação da versão do Node.js**
    Verifique se a versão correta está sendo utilizada:
 
-```
+```bash
         node -v
 ```
