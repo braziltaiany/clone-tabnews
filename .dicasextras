@@ -1,21 +1,54 @@
-## Arquivo .dicasextras
+## Arquivo `.dicasextras`
 
-Este arquivo contém dicas adicionais sobre o estudo deste repositório. Inclui comandos úteis e anotações específicas.
+Este arquivo contém dicas adicionais sobre o estudo deste repositório, incluindo comandos úteis e anotações específicas.
 
-## Comandos git
+---
 
-- git commit -m 'adiciona arquivo `.editorconfig`' -> adiciona estilização ao commit
+## Comandos Git
+
+- **`git commit -m 'adiciona arquivo .editorconfig'`**  
+  Adiciona uma descrição ao commit especificando a inclusão do arquivo `.editorconfig`.
+
+---
 
 ## Package - Manifesto
 
-### prettier
+### Prettier
 
-- Instalar > adicionar extenção para analises futuras automaticas > configurar no vs code
-  -- Configuração vs code
-  Default Formatter > prettier
-  Files: Auto Save > off
-  Editor: Format On Save > checked
+O Prettier é uma ferramenta para formatação de código, que garante consistência no estilo do projeto. Abaixo estão as etapas para instalação, configuração e uso:
 
--- "lint:check": "prettier --check ." -> -- roda o comando posterior e o "." se refere a todos os arquivos existentes, portante ele irá checar se todos os arquivos estão com a formatação correta.
---> npm run lint:check = analisa
---> npm run lint:fix = corrige
+1. **Instalar a dependência**  
+    Execute o seguinte comando para instalar o Prettier como dependência de desenvolvimento:
+
+   `````bash
+        npm i prettier -D
+   Configurar no package.json
+   Adicione os scripts abaixo para verificar e corrigir a formatação dos arquivos:
+        ``` json
+                "scripts": {
+                "lint:check": "prettier --check .",
+                "lint:fix": "prettier --write ."
+                }
+        ````
+
+    --check .: Verifica todos os arquivos no projeto para garantir que estão formatados corretamente.
+    --write .: Corrige automaticamente a formatação dos arquivos.
+
+    Para executar:
+        npm run lint:check: Analisa os arquivos para verificar inconsistências.
+        npm run lint:fix: Corrige a formatação dos arquivos.
+
+   `````
+
+2. **Instalar a extensão Prettier no VS Code**
+
+Acesse o marketplace do VS Code e procure por "Prettier - Code formatter".
+Instale a extensão.
+Configuração no VS Code
+Ajuste as configurações do editor para utilizar o Prettier automaticamente:
+
+```
+    Default Formatter: Selecione Prettier como o formatador padrão.
+    Files: Auto Save: Desative a opção de salvamento automático (off).
+    Editor: Format On Save: Ative a opção para formatar automaticamente ao salvar (checked).
+```
